@@ -24,12 +24,18 @@ function HomePage({ answeredQuestions, unansweredQuestions }) {
         >
           <Tab eventKey="unanswered" title="Unanswered Questions">
             <div className="border border-top-0 rounded-bottom pt-3">
-              <QuestionList questions={unansweredQuestions} />
+              {unansweredQuestions.length > 0
+                ? <QuestionList questions={unansweredQuestions} />
+                : <p className="text-center text-muted">You've answered all the questions! &#129395;</p>
+              }
             </div>
           </Tab>
           <Tab eventKey="answered" title="Answered Questions">
             <div className="border border-top-0 rounded-bottom pt-3">
-              <QuestionList questions={answeredQuestions} />
+              {answeredQuestions.length > 0
+                ? <QuestionList questions={answeredQuestions} />
+                : <p className="text-center text-muted">You haven't answered any questions. &#129325;</p>
+              }
             </div>
           </Tab>
         </Tabs>
