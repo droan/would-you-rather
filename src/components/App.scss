@@ -1,0 +1,9 @@
+@import "styles/variables";
+
+// Change theme
+$theme-colors: (
+  "primary": $primary-color,
+);
+
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";

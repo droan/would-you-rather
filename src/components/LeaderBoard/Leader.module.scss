@@ -1,0 +1,46 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/_breakpoints";
+@import "styles/variables";
+
+.leaderRow {
+  border: 0.12rem solid $border-color;
+  border-radius: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  @include media-breakpoint-up(sm) {
+    width: 35rem;
+  }
+}
+
+.avatarCol {
+  padding: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.nameCol {
+  border-left: 0.12rem solid $border-color;
+  border-right: 0.12rem solid $border-color;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.count {
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.spacer {
+  border-bottom: 0.12rem solid $border-color;
+}
