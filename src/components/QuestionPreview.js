@@ -22,7 +22,7 @@ export default function QuestionPreview({ question }) {
             <Card.Text>
               ...{question.optionOne.text}...
             </Card.Text>
-            <Button as={NavLink} to={`/question/${question.id}`} variant="outline-primary" size="sm" block>
+            <Button as={NavLink} to={`/questions/${question.id}`} variant="outline-primary" size="sm" block>
               View Poll
             </Button>
           </Col>

@@ -28,9 +28,9 @@ function App({ onMount }) {
             <Switch>
               <Redirect from="/:url*(/+)" to={pathname.slice(0, -1)} />
               <Route exact path="/" component={HomePage} />
-              <Route exact path='/question/:id' component={QuestionPage} />
-              <Route exact path="/new" component={QuestionNew} />
-              <Route exact path="/board" component={LeaderBoard} />
+              <Route exact path='/questions/:id' component={QuestionPage} />
+              <Route exact path="/add" component={QuestionNew} />
+              <Route exact path="/leaderboard" component={LeaderBoard} />
               <Route component={NotFound} />
             </Switch>
           </LoginRequired>

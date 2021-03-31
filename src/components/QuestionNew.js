@@ -59,7 +59,7 @@ function QuestionNew({ onSubmitForm }) {
 const mapDispatchToProps = (dispatch, { history }) => ({
   onSubmitForm: (optionOne, optionTwo) => {
     dispatch(handleAddQuestion(optionOne, optionTwo))
-      .then(question => history.push(`/question/${question.id}`))
+      .then(question => history.push(`/questions/${question.id}`))
   }
 })
 

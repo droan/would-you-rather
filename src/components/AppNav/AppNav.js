@@ -15,8 +15,8 @@ function AppNav() {
         <Navbar.Collapse id="navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link as={NavLink} activeClassName="active" exact to="/">Home</Nav.Link>
-            <Nav.Link as={NavLink} activeClassName="active" to="/new">New Question</Nav.Link>
-            <Nav.Link as={NavLink} activeClassName="active" to="/board">Leader Board</Nav.Link>
+            <Nav.Link as={NavLink} activeClassName="active" to="/add">New Question</Nav.Link>
+            <Nav.Link as={NavLink} activeClassName="active" to="/leaderboard">Leader Board</Nav.Link>
           </Nav>
           <UserNav />
         </Navbar.Collapse>
